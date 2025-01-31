@@ -1,0 +1,101 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", serif;
+}
+div {
+  /* border: 10px; */
+  background-color: bisque;
+}
+.top-header {
+  padding: 15px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+}
+.top-header * {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 100%;
+  display: flex;
+  gap: 25px;
+}
+.touchable-icon {
+  display: flex;
+  height: 30px;
+}
+.touchable-text {
+  text-wrap: nowrap;
+  align-items: center;
+  background-color: rgb(236, 197, 150);
+  padding: 9px;
+  height: fit-content;
+  border-radius: 100vh;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  transition-duration: 300ms;
+}
+.touchable-text:hover {
+  background-color: rgb(213, 173, 124);
+  transition-duration: 300ms;
+}
+a.touchable-text:active {
+  background-color: rgb(186, 147, 99);
+  transition-duration: 0ms;
+}
+.search-bar {
+  padding-left: 15px;
+  box-sizing: border-box;
+  flex: 1;
+  height: 70%;
+  border-radius: 100vh;
+  border-width: 1px;
+  border-color: rgb(236, 197, 150);
+  background-color: rgb(236, 197, 150);
+  overflow: hidden;
+  gap: 0;
+}
+.search-icon {
+  height: 100%;
+  background-color: rgb(213, 173, 124);
+  padding: 0px 15px;
+  box-sizing: border-box;
+}
+.search-icon img {
+  height: 60%;
+}
+.search-text-box {
+  flex: 1;
+  background: none;
+  border: none;
+}
+.search-text-box::placeholder {
+  color: black;
+}
+.search-text-box:focus {
+  outline: none;
+}
+.kiri {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-self: flex-start;
+  flex: 1;
+  /* background-color: aqua; */
+}
+.kanan {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-self: flex-end;
+  justify-content: flex-end;
+  flex: 1;
+  /* background-color: brown; */
+}
+.tengah {
+  flex: 2;
+  /* background-color: chartreuse; */
+}
